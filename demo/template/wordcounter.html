@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Home</title>
+</head>
+    
+<body>
+
+        <div class="container">
+            <div class="counter">
+
+
+                <form method="post" class="countword">
+                    {% csrf_token %}
+
+                    <h2>Word Counter</h2><br>
+                    <textarea name="text" id="text"  cols="40" rows="10" placeholder="Paste in the word to count ...">{% if text %} {{text}} {% endif %}</textarea><br><br>
+                    <input type="submit" class="count" value="count words"><br><br>
+                    <input type="button" value="Reset" onclick="clearResult()">
+                    <h4>No. of words: {% if text %}<span id="clearcount">{{counter}}</span>{% endif %}</h4>
+                
+                </form>
+
+            </div>
+        </div>
+    
+
+        <script src="{% static '/static/sandbox.js' %}"></script>
+</body>
+</html>
+

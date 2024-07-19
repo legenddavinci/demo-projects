@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 100px  auto;
+    width: 40vw;
+    height: 60vh;
+}
+
+.countword{
+    padding: 40px;
+}
+
+h2,h4{
+    margin-left: 115px;
+}
+.count{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-left: 130px;
+    padding: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: small;
+    background-color: #131111;
+    color: rgb(226, 217, 217);
+    width: 10vw;
+    cursor: pointer;
+
+}
+
+#text{
+    resize: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px 10px;
+    margin-left: 15px;
+    outline: none;
+    box-shadow: none;
+    width: 30vw;
+}
+
+span{
+     color: rgb(92, 17, 17);
+}
